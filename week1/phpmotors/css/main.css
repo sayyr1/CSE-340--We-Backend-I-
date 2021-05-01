@@ -1,0 +1,307 @@
+body {
+    background-color: #ffffff;
+  }
+  
+  
+/**  --- THIS IS FOR SMALL VIEWS  ----*/
+  /** Font Styles*/
+  a,
+  h1,
+  h2,
+  p,
+  li {
+    font-family: 'Trispace', sans-serif;
+  }
+  
+  /** Header Style*/
+  header div {
+    width: 100%;
+    display: flex;
+  
+    justify-content: space-between;
+  }
+  
+  header div .logo {
+    width: 160px;
+  }
+  
+  
+  header div a {
+    color: #3a3a3a;
+    padding: 1.5rem 1rem;
+  }
+  
+  
+  
+  /** Navigation Styles*/
+  nav {
+    background-color: #3a3a3a;
+    margin: 0;
+  }
+  
+  nav ul {
+    margin-left: -2rem;
+    width: fit-content;
+    display: flex;
+  
+    flex-direction: row;
+  }
+  
+  nav li {
+    padding: 15px 0;
+    background-color: #3a3a3a;
+    color: #3a3a3a;
+    list-style: none;
+  }
+  
+  nav li:hover {
+    background-color: #4c96d7;
+    color: #3a3a3a;
+    transform: scale(1.08);
+  }
+  
+  nav li a {
+    padding: 3px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+
+  nav li a:hover {
+    color: #3a3a3a;
+  }
+  
+  /** Main */
+  
+  main section.welcome h1 {
+    font-size: 1.2rem;
+  }
+  
+  main section.welcome div.car img {
+    margin-top: -3rem;
+    width: 100%;
+  }
+  
+  
+  main section.welcome div.own-today img {
+    width: 50%;
+    display: block;
+    margin: 30px auto 20px auto;
+  }
+
+  main section.welcome p {
+    position: relative;
+    color: 	#3232ff;
+  }
+  
+   section.welcome>h1 {
+    margin-left: .5rem;
+  }
+  
+  section.welcome>div.sponsor {
+    margin-left: .5rem;
+  }
+  
+  section.welcome>div.sponsor p {
+    font-weight: 400;
+  }
+  
+  
+  section.welcome>div.sponsor p strong {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /** Aside Reviews */
+  
+  
+  aside section.reviews h2 {
+    margin-left: .5rem;
+    font-size: 1.2rem;
+  }
+  
+  
+  aside section.reviews ul li {
+    font-size: 0.8rem;
+    line-height: 2rem;
+  }
+  
+  
+  
+  /** Aside Upgrades */
+  aside section.upgrades {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    justify-items: center;
+    background-color: #ffffff;
+    row-gap: 1rem;
+  }
+  
+  aside section.upgrades div img {
+  
+    align-self: center;
+    margin-top: -20px;
+    width: 50%;
+    padding: 10px 0;
+  }
+  
+  aside section.upgrades div {
+    width: 90%;
+    background-color: #4c96d7;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  
+    justify-content: flex-end;
+  
+    flex-direction: column;
+  
+    align-items: center;
+  }
+  
+  aside section.upgrades div a {
+    text-align: center;
+    display: block;
+    background-color: #ffffff;
+    width: 100%;
+  }
+  
+  aside section.upgrades h2 {
+    grid-column: span 2;
+    justify-self: start;
+    font-size: 1.2rem;
+    margin-left: .5rem;
+  }
+  
+
+  .images div img {
+    justify-items: center;
+    width: 100%;
+    display: block;
+    width: 30%;
+  }
+  
+  /** Footer Styles*/
+  hr {
+    background-color: black;
+    height: 3px;
+  }
+  
+  footer p.footer {
+    font-size: 12px;
+    text-align: center;
+    color: black;
+  }
+  
+  
+  /** THI IS FOR LARGE VIEWS*/
+  
+  @media only screen and (min-width: 64em) {
+    footer p.footer {
+      font-size: 1rem;
+    }
+  
+    aside section.upgrades h2 {
+      font-size: 1.5rem;
+    }
+  
+    aside section.reviews ul li {
+      font-size: 1rem;
+    }
+  
+    aside section.reviews h2 {
+      font-size: 1.5rem;
+    }
+  
+    aside section.reviews {
+      grid-column: 2/3;
+      grid-row: 1;
+    }
+  
+    aside {
+      display: grid;
+      column-gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+      padding: 1rem;
+    }
+  
+    section.welcome>div.sponsor {
+        width: fit-content;
+      margin-left: 4rem;
+      font-size: 2rem;
+    }
+  
+    section.welcome>div.sponsor p strong {
+      font-size: 1.8rem;
+    }
+  
+    section.welcome>div.sponsor p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+  
+    main section.welcome p {
+      font-size: 1.5rem;
+    }
+  
+    main section.welcome div.own-today img {
+      margin-top: 1rem;
+      width: 80%;
+    }
+  
+    main section.welcome div.own-today img {
+      margin-left: 4rem;
+      margin-top: -1.5rem;
+    }
+  
+    main section.welcome div.own-today {
+      align-self: flex-start;
+      z-index: 1;
+    }
+  
+    main section.welcome div.car {
+  
+      order: 2;
+      margin-top: -8rem;
+    }
+  
+    main section.welcome h1 {
+      font-size: 2rem;
+    }
+  
+    main section.welcome {
+      display: flex;
+  
+      flex-direction: column;
+    }
+  
+    nav li a {
+      font-size: 1.3rem;
+    }
+  
+    nav li {
+      margin-right: 1rem;
+    }
+  
+    header div a {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+    }
+  
+    header div .logo {
+      width: 200px;
+    }
+  
+    body {
+      border-radius: .5rem;
+      border: 5px solid #4c96d7;
+      max-width: 65rem;
+      margin: 2rem auto;
+    }
+  
+    html {
+      background: url(http://localhost/phpmotors/images/site/small_check.jpg);
+    }
+  }
