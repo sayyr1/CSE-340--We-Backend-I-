@@ -1,0 +1,727 @@
+
+body {
+  background-color: #ffffff;
+}
+a{
+  text-decoration: none;
+}
+
+/**  --- --------------------------------
+            THIS IS FOR SMALL VIEWS 
+  -----------------------------------------*/
+
+
+/** Font Styles*/
+a,
+h1,
+h2,
+p,
+li {
+  font-family: 'Trispace', sans-serif;
+}
+
+/** Header Style*/
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+header div .logo {
+  width: 160px;
+}
+
+
+header div a {
+  color: #3a3a3a;
+  text-align: center;
+
+}
+
+
+a.my-account:hover {
+  transform: scale(1.02);
+  background-color: #4c96d7;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+
+/** Navigation Styles*/
+nav {
+  background-color: #3a3a3a;
+  margin: 0;
+  width: 100%;
+}
+
+nav ul {
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+nav li {
+  background-color: #3a3a3a;
+  color: #3a3a3a;
+  list-style: none;
+  cursor: pointer;
+
+}
+
+nav li:hover {
+  background-color: #4c96d7;
+  color: #3a3a3a;
+  transform: scale(1.05);
+}
+nav li.active{
+  background-color: #4c96d7;
+  color: #3a3a3a;
+  transform: scale(1.05);
+}
+nav li a {
+  font-size: 15px;
+  height: max-content;
+  padding: 10px;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav li a:active{
+color: black;
+}
+
+/** Main */
+
+main section.welcome h1 {
+  font-size: 1.2rem;
+}
+
+main section.welcome div.car img {
+  margin-top: -3rem;
+  width: 100%;
+}
+
+
+main section.welcome div.own-today img {
+  width: 50%;
+  display: block;
+  margin: 30px auto 20px auto;
+}
+
+main section.welcome p {
+  position: relative;
+  color: #3232ff;
+}
+
+section.welcome>h1 {
+  margin-left: .5rem;
+}
+
+section.welcome>div.sponsor {
+  margin-left: .5rem;
+}
+
+section.welcome>div.sponsor p {
+  font-weight: 400;
+}
+
+
+section.welcome>div.sponsor p strong {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/** Aside Reviews */
+
+
+aside section.reviews h2 {
+  margin-left: .5rem;
+  font-size: 1.2rem;
+}
+
+
+aside section.reviews ul li {
+  font-size: 0.8rem;
+  line-height: 2rem;
+}
+
+
+
+/** Aside Upgrades */
+aside section.upgrades {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  justify-items: center;
+  background-color: #ffffff;
+  row-gap: 1rem;
+}
+
+aside section.upgrades div img {
+
+  align-self: center;
+  margin-top: -20px;
+  width: 50%;
+  padding: 10px 0;
+}
+
+aside section.upgrades div {
+  width: 90%;
+  background-color: #4c96d7;
+  display: flex;
+  flex-wrap: wrap-reverse;
+
+  justify-content: flex-end;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+aside section.upgrades div a {
+  text-align: center;
+  display: block;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+aside section.upgrades h2 {
+  grid-column: span 2;
+  justify-self: start;
+  font-size: 1.2rem;
+  margin-left: .5rem;
+}
+
+
+.images div img {
+  justify-items: center;
+  width: 100%;
+  display: block;
+  width: 30%;
+}
+
+/** Footer Styles*/
+hr {
+  background-color: black;
+  height: 3px;
+}
+
+footer p.footer {
+  font-size: 12px;
+  text-align: center;
+  color: black;
+}
+
+.not-register {
+  margin: 0 0 1rem 1rem;
+  font-size: 1.1rem;
+}
+
+
+
+/**
+   --------------------------
+        FORMS
+   --------------------------
+  */
+/*Login Form**/
+section.login {
+  width: 100%;
+  padding: 1rem;
+}
+
+section.login fieldset label {
+  padding: 1rem 0;
+  font-size: 1.3rem;
+
+}
+
+fieldset.login,
+fieldset label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+fieldset.login {
+  width: 100%;
+  border: none;
+  margin-left: -1rem;
+}
+
+fieldset.login input {
+  width: 80%;
+  height: 2rem;
+  border: solid;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+fieldset.login input.submitBtn {
+  width: 50%;
+  font-size: 1.2rem;
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+  height: auto;
+  border-radius: 10px;
+}
+
+fieldset.login input.submitBtn:hover {
+  transform: scale(1.02);
+}
+
+section.login h1.login-title {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+section.login p.instructions {
+  margin-top: 0;
+}
+
+/** Register Form*/
+
+fieldset.register {
+  display: flex;
+  flex-direction: column;
+}
+
+
+i.far {
+  width: fit-content;
+  font-size: 1rem;
+  border: 0.5px solid;
+  margin-top: 1rem;
+  background-color: #3a3a3a;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+
+}
+
+i.far:hover {
+  transform: scale(1.02);
+
+}
+
+div.not-register {
+  margin-left: 1rem;
+
+}
+
+p.instructions {
+  display: block;
+  width: 20rem;
+  margin-top: -.5rem;
+  opacity: 0.6;
+  font-size: 15px;
+
+}
+
+/*-----------
+    Adding Forms
+    ------------
+  */
+/* Vehicles Management*/
+section.management_container {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+section.add {
+  padding: .5rem;
+}
+
+fieldset.add label {
+  margin-top: 1rem
+}
+
+select.select {
+  width: 50%;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  border: solid 2px;
+  border-radius: 6px;
+  height: 2rem;
+}
+
+input.vehicle_submit {
+  margin-top: 1rem;
+}
+
+textarea#invDescription {
+  width: 18rem;
+  height: 8rem;
+  border: 0.5px solid;
+}
+
+/* Adding Classifications */
+form.adding_classification_form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+}
+
+form.adding_classification_form .submitBtn {
+  margin-top: 8px;
+  width: 36%;
+  font-size: 14px;
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  height: auto;
+  border-radius: 6px;
+}
+
+form.adding_classification_form #classificationName {
+  height: 20px;
+  width: 13rem;
+  border-radius: 5px;
+}
+
+
+form.adding_classification_form .submitBtn:hover {
+  transform: scale(1.02);
+}
+
+p#alert {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+form.adding_classification_form input:required:invalid,
+input:focus:invalid {
+  background-color: rgb(250, 187, 187);
+}
+
+form.adding_classification_form input:required:valid {
+  background-color: rgb(157, 250, 157);
+}
+
+section.add input:required:valid {
+  background-color: rgb(157, 250, 157);
+}
+
+/*
+  --------------------
+      *CLASSIFICATION*
+  --------------------
+  **/
+#inv_display {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#inv_display li {
+  margin-bottom: .5em;
+  border: 1px #ccc solid;
+  list-style-type: none;
+  flex: 1 1 auto;
+}
+
+#inv_display li img {
+  max-width: 100%;
+  height: 145px;
+}
+p.detail-price {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  padding: 8px;
+  width: fit-content;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+p.detail-color , p.detail-stock{
+background-color: #3a3a3a45;
+font-weight: 600;
+width: max-content;
+
+}
+/*
+  --------------------
+      *VEHICLE DETAILS*
+  --------------------
+  **/
+img.detail-img {
+  width: 100%;
+  display: grid;
+}
+
+div.other-images img{
+ width: 100%;
+}
+div.other-images{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: auto;
+}
+/**--------------------------------------------------------------------
+                    THI IS FOR LARGE VIEWS
+   --------------------------------------------------------------------*/
+
+@media only screen and (min-width: 64em) {
+  footer p.footer {
+    font-size: 1rem;
+  }
+
+  aside section.upgrades h2 {
+    font-size: 1.5rem;
+  }
+
+  aside section.reviews ul li {
+    font-size: 1rem;
+  }
+
+  aside section.reviews h2 {
+    font-size: 1.5rem;
+  }
+
+  aside section.reviews {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+
+  aside {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+  }
+
+  section.welcome>div.sponsor {
+    width: fit-content;
+    margin-left: 4rem;
+    font-size: 2rem;
+  }
+
+  section.welcome>div.sponsor p strong {
+    font-size: 1.8rem;
+  }
+
+  section.welcome>div.sponsor p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  main section.welcome p {
+    font-size: 1.5rem;
+  }
+
+  main section.welcome div.own-today img {
+    margin-top: 1rem;
+    width: 80%;
+  }
+
+  main section.welcome div.own-today img {
+    margin-left: 4rem;
+    margin-top: -1.5rem;
+  }
+
+  main section.welcome div.own-today {
+    align-self: flex-start;
+    z-index: 1;
+  }
+
+  main section.welcome div.car {
+
+    order: 2;
+    margin-top: -8rem;
+  }
+
+  main section.welcome h1 {
+    font-size: 2rem;
+  }
+
+  main section.welcome {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  nav li a {
+    font-size: 1.3rem;
+  }
+
+  nav li {
+    margin-right: 1rem;
+  }
+
+
+  header div a {
+    color: #3a3a3a;
+    padding: 2rem 1rem;
+    width: max-content;
+
+  }
+
+  div a#client {
+    margin-left: 34rem;
+  
+  }
+
+  header div .logo {
+    width: 200px;
+  }
+
+  body {
+    border-radius: .5rem;
+    border: 5px solid #4c96d7;
+    max-width: 65rem;
+    margin: 2rem auto;
+  }
+
+  html {
+    background: url(http://localhost/phpmotors/images/site/small_check.jpg);
+  }
+
+  /*-----------------------------------
+    **Login Form ** Register and Adding
+   --------------------------------------*/
+
+  /** Vehicles Management*/
+  ul.vehicles_links {
+    line-height: 2rem;
+    font-size: 1.3rem;
+  }
+
+  section.login fieldset.login input {
+    width: 30%;
+  }
+
+
+  section.login fieldset.login input.submitBtn {
+    width: fit-content;
+
+  }
+
+  fieldset.add {
+    padding: 2rem;
+  }
+
+  fieldset.add input {
+    width: 30%;
+  }
+
+  fieldset.add input.vehicle_submit {
+    width: fit-content;
+  }
+
+  fieldset.add textarea#invDescription {
+    width: 31%
+  }
+
+  fieldset.login input.update {
+    width: 40px;
+  }
+
+  section.login h1 {
+    margin-bottom: -0.5rem;
+  }
+
+  section.add h1 {
+    margin-left: 1rem;
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  fieldset.add select.select {
+    width: 20%
+  }
+
+  /* Adding Classifications*/
+  section.adding_classification {
+    padding: 0 10px;
+  }
+
+  section.adding_classification form.adding_classification_form #classificationName {
+    height: 31px;
+  }
+
+  section.adding_classification form.adding_classification_form input.submitBtn {
+    width: 15%;
+  }
+
+
+  /*
+  --------------------
+      *CLASSIFICATION*
+  --------------------
+  **/
+  #inv_display {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  #inv_display h2 {
+    font-size: 1rem;
+  }
+
+  #inv_display li {
+    margin-right: 20px;
+    max-width: 200px;
+    flex: 1 0 auto;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #inv_display div {
+    width: 100%;
+  }
+
+  /*
+  --------------------
+      *VEHICLE DETAILS*
+  --------------------
+  **/
+  section.container{
+    padding: 20px;
+  }
+  div.detail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 20px;
+  }
+
+  /* div.detail-container img{
+  grid-row: span2;
+}    */
+  div.detail-container p.detail-price{
+    background-color: #3a3a3a;
+    color: #ffffff;
+    padding: 20px;
+    width: fit-content;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    grid-row: 2/3;
+  }
+
+  div.detail-container article {
+    grid-column: 2/3;
+  }
+main.main-detail{
+  display: flex;
+  flex-direction: row-reverse;
+}
+main.main-detail div.other-images {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  row-gap: 20px;
+  
+}
+main.main-detail div.other-images img:hover{
+  transform: scale(1.2);
+}
+
+}
